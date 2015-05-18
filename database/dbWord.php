@@ -34,10 +34,10 @@ include 'domain/Word.php';
         
      function add_Word(){
           if((isset($_POST['word_name'])))
-    {
+    {   {
         error_log("Submit Button pressed");
         $word_name = ($_POST["word_name"]);
-        error_log("The word nane is ". $word_name);
+        error_log("The word name is ". $word_name);
         $word_def = ($_POST["word_def"]);
         $word_syn = ($_POST["word_syn"]);
         $username = "root";
@@ -56,6 +56,7 @@ include 'domain/Word.php';
             error_log("No, the data was not inserted");
         }
         mysqli_close($connector);
+    }
         $_POST['word_name'] = null;
     }
      }

@@ -1,5 +1,5 @@
 <?php
-        include('database/dbWord.php');
+        include_once('database/dbWord.php');
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,18 +7,21 @@
     <meta charset="utf-8">
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
     <title>Personal Dictionary</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <style>
+       
+    </style>
 </head>
 <body>
 <?php
-include ('menu.html');
+
+include_once ('menu.html');
+include_once('login.php');
 include ('dictionaryWordTable.html');
-include ('wordMethods.html');
+include ('wordmethods.html');
 ?>
 </body>
 </html>

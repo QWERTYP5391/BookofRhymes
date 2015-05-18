@@ -1,5 +1,6 @@
 <?php
         include_once('database/dbWord.php');
+        include_once('database/dbGuide.php');
  ?>
  <!DOCTYPE html>
 <!--
@@ -7,10 +8,9 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<button type="button" class="btn btn-default pull-left" data-toggle="modal" data-target="#myModal">Add Word</button>
-<button type="button" class="btn btn-default pull-left" data-toggle="modal" data-target="#myModal">Edit Word</button>
-    <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+
+<!-- Modal -->
+<div id="WordModal"  role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -43,3 +43,6 @@ and open the template in the editor.
     </div>
   </div>
   </div>
+
+    
+ 
