@@ -54,7 +54,7 @@
             error_log("No, the data was not inserted");
         }
         mysqli_close($connector);
-        $_POST['sentence'] = null;
+        unset($_POST['sentence']);
     }
      }
      

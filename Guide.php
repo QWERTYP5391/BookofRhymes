@@ -9,8 +9,9 @@
     
     <body>
 <?php
-include_once ('menu.html');
-include_once ('login.php');
+require_once 'header.php';
+         require_once 'database/dbGuide.php';
+           if (!$loggedin) die();
 include_once('guideTable.html');
 include_once ('guidemethods.html');
 ?>

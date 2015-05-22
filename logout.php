@@ -1,12 +1,16 @@
-<?php
+<?php // Example 26-12: logout.php
+  require_once 'header.php';
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+  if (isset($_SESSION['user']))
+  {
+    destroySession();
+    echo "<div class='main'>You have been logged out. Please " .
+         "<a href='index.php'>click here</a> to refresh the screen.";
+  }
+  else echo "<div class='main'><br>" .
+            "You cannot log out because you are not logged in";
+?>
 
-session_start();
-unset($_SESSION["username"]);  // where $_SESSION["nome"] is your own variable. if you do not have one use only this as follow **session_unset();**
-include("login.php");
-
+    <br><br></div>
+  </body>
+</html>

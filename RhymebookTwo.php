@@ -1,5 +1,7 @@
 <?php
-        include('database/dbWord.php');
+       require_once 'header.php';
+         require_once 'database/dbWord.php';
+           if (!$loggedin) die();
  ?>
 <!doctype html>
 <!-- See http://www.firepad.io/docs/ for detailed embedding docs. -->
@@ -35,16 +37,12 @@
 
         }
         #firepad {
-            position: absolute; left: 200px; top: 30px; bottom: 265px; right: 0; height: auto;
+            position: absolute; left: 200px; top: 50px; bottom: 265px; right: 0; height: auto;
         }
      </style>
 </head>
 <body>
-<?php
-    include_once ('menu.html');
-    include_once('login.php');
-   
-?>
+
 <div class="container">
 <div id="userlist"></div>
 <div id="firepad"></div>

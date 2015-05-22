@@ -5,8 +5,9 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
-    include_once ('menu.html');
-    include_once('login.php');
+   require_once 'header.php';
+       
+           if (!$loggedin) die();
 ?>
 <html>
     <head>
@@ -21,5 +22,13 @@ and open the template in the editor.
     <body>
        <div><a href = "Rhymebook.php">First Document</a></div>
        <div><a href = "RhymebookTwo.php">Second Document</a></div>
+       <div><a href = "Rhymebook.php">Third Document</a></div>
+       <div><a href = "RhymebookTwo.php">Fourth Document</a></div>
+       <div><a href = "Rhymebook.php">Fifth Document</a></div>
+       <div><a href = "RhymebookTwo.php">Sixth Document</a></div>
+       <div><a href = "Rhymebook.php">Seventh Document</a></div>
+       <div><a href = "RhymebookTwo.php">Eight Document</a></div>
+       <div><a href = "Rhymebook.php">Ninth Document</a></div>
+       <div><a href = "RhymebookTwo.php">Tenth Document</a></div>
     </body>
 </html>

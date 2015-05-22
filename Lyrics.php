@@ -9,8 +9,9 @@
  </head>
 <body>
  <?php
-    include_once('database/dbWord.php');
-    include ('menu.html');
+    require_once 'header.php';
+         require_once 'database/dbWord.php';
+         if (!$loggedin) die();
  ?>
  <div id ="container">
 <?php

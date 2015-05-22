@@ -57,7 +57,7 @@ include 'domain/Word.php';
         }
         mysqli_close($connector);
     }
-        $_POST['word_name'] = null;
+        unset($_POST['word_name']);
     }
      }
      
