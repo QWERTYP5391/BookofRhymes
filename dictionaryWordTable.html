@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <table class="table table-bordered table-hover" id="tab_logic">
+                <thead>
+                <tr >
+                    <th class="text-center">
+                        #
+                    </th>
+                    <th class="text-center">
+                        Word
+                    </th>
+                    <th class="text-center">
+                        Definition
+                    </th>
+                    <th class="text-center">
+                        Synonyms
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                  <?php
+                   load_dbWord();
+                  ?>
+                </tbody>
+            </table>
+         
+        </div>
+    </div>
+</div>
+    
